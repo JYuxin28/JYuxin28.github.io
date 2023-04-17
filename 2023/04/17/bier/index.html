@@ -79,20 +79,21 @@
 
 
 
-<meta name="description" content="网络切片基础概念Network Slicing 视频 5G的关键技术  eMBB：增强型移动带宽 mMTC：大规模机器类型通信 uRLLC：超可可靠和低时延通信  网络切片的定义一个5G网络切片是一组网络功能、运行这些网络功能的资源以及这些功能特定的配置所组成的集合，这些网络功能及其相应的配置形成一个完整的逻辑网络。 网络切片的价值之一：极高的可靠性保障基于 SRv6 的网络切片提供针对 IP 网">
+<meta name="description" content="Bit Index Explicit Replication (BIER) 数据包通过比特转发入口路由器 (BFIR) 进入 BIER 域。他们构建一个 BIER 报头并将其推送到包含 BIER 转发过程信息的数据包上。在比特转发出口路由器 (BFER)，BIER 报头被移除。 一些基本概念 BIER域：支持BIER转发的网络域。BIER域可以划分和配置多个Sub-domain(SD)，以支持&amp;#">
 <meta property="og:type" content="article">
-<meta property="og:title" content="切片">
-<meta property="og:url" content="https://jyuxin28.github.io/2023/04/17/%E5%88%87%E7%89%87/index.html">
+<meta property="og:title" content="Bit Index Explicit Replication (BIER)">
+<meta property="og:url" content="https://jyuxin28.github.io/2023/04/17/bier/index.html">
 <meta property="og:site_name" content="Yuxin&#39;s Blog">
-<meta property="og:description" content="网络切片基础概念Network Slicing 视频 5G的关键技术  eMBB：增强型移动带宽 mMTC：大规模机器类型通信 uRLLC：超可可靠和低时延通信  网络切片的定义一个5G网络切片是一组网络功能、运行这些网络功能的资源以及这些功能特定的配置所组成的集合，这些网络功能及其相应的配置形成一个完整的逻辑网络。 网络切片的价值之一：极高的可靠性保障基于 SRv6 的网络切片提供针对 IP 网">
+<meta property="og:description" content="Bit Index Explicit Replication (BIER) 数据包通过比特转发入口路由器 (BFIR) 进入 BIER 域。他们构建一个 BIER 报头并将其推送到包含 BIER 转发过程信息的数据包上。在比特转发出口路由器 (BFER)，BIER 报头被移除。 一些基本概念 BIER域：支持BIER转发的网络域。BIER域可以划分和配置多个Sub-domain(SD)，以支持&amp;#">
 <meta property="og:locale">
-<meta property="og:image" content="https://jyuxin28.github.io/%E5%88%87%E7%89%87/1.png">
-<meta property="article:published_time" content="2023-04-17T07:46:06.000Z">
-<meta property="article:modified_time" content="2023-04-17T08:13:47.759Z">
+<meta property="og:image" content="https://jyuxin28.github.io/bier/image-20230323154223925.png">
+<meta property="og:image" content="https://jyuxin28.github.io/bier/image-20230324162729119.png">
+<meta property="article:published_time" content="2023-04-17T08:14:40.000Z">
+<meta property="article:modified_time" content="2023-04-17T08:16:42.514Z">
 <meta property="article:author" content="JiangYuxin">
 <meta property="article:tag" content="happiness, patience, confidence">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jyuxin28.github.io/%E5%88%87%E7%89%87/1.png">
+<meta name="twitter:image" content="https://jyuxin28.github.io/bier/image-20230323154223925.png">
 
 
 
@@ -122,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://JYuxin28.github.io/2023/04/17/切片/"/>
+  <link rel="canonical" href="https://JYuxin28.github.io/2023/04/17/bier/"/>
 
 
 
 
 
-  <title>切片 | Yuxin's Blog</title>
+  <title>Bit Index Explicit Replication (BIER) | Yuxin's Blog</title>
   
 
 
@@ -245,7 +246,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://JYuxin28.github.io/2023/04/17/%E5%88%87%E7%89%87/">
+    <link itemprop="mainEntityOfPage" href="https://JYuxin28.github.io/2023/04/17/bier/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -262,7 +263,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">切片</h1>
+          <h1 class="post-title" itemprop="name headline">Bit Index Explicit Replication (BIER)</h1>
         
 
         <div class="post-meta">
@@ -274,7 +275,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-04-17T15:46:06+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-04-17T16:14:40+08:00">
                 2023-04-17
               </time>
             
@@ -356,26 +357,72 @@
       
 
       
-        <h1 id="网络切片基础概念"><a href="#网络切片基础概念" class="headerlink" title="网络切片基础概念"></a><strong>网络切片基础概念</strong></h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1jt411j7PK/?spm_id_from=333.337.search-card.all.click&vd_source=f279ff5b2f7e3314d652984259c472fb">Network Slicing 视频</a></p>
-<p>5G的关键技术</p>
-<ul>
-<li>eMBB：增强型移动带宽</li>
-<li>mMTC：大规模机器类型通信</li>
-<li>uRLLC：超可可靠和低时延通信</li>
+        <h1 id="Bit-Index-Explicit-Replication-BIER"><a href="#Bit-Index-Explicit-Replication-BIER" class="headerlink" title="Bit Index Explicit Replication (BIER)"></a>Bit Index Explicit Replication (BIER)</h1><p><img src="/bier/image-20230323154223925.png" alt="image-20230323154223925"></p>
+<p>数据包通过比特转发入口路由器 (BFIR) 进入 BIER 域。他们构建一个 BIER 报头并将其推送到包含 BIER 转发过程信息的数据包上。在比特转发出口路由器 (BFER)，BIER 报头被移除。</p>
+<h3 id="一些基本概念"><a href="#一些基本概念" class="headerlink" title="一些基本概念"></a><strong>一些基本概念</strong></h3><ul>
+<li><p>BIER域：支持BIER转发的网络域。BIER域可以划分和配置多个Sub-domain(SD)，以支持&#x3D;&#x3D;IGP&#x3D;&#x3D;多拓扑等特性。</p>
+</li>
+<li><p>BFR（比特转发路由器）：指支持BIER转发的路由器。BFIR&#x2F;BFER—BIER域入口路由器和出口路由器</p>
+</li>
+<li><p>BFR-prefix： BFR的IP地址，BIER域中的各BFR都需要为每个Sub-domain配置一个BFR-prefix，如果BFR上配置了多个SD，这些SD可以使用相同的BFR-prefix，也可以用使用不同的BFR-prefix。</p>
+</li>
+<li><p>BFR-ID（BFIR转发路由器标识符）：是一个1-65535范围内的整数，&#x3D;&#x3D;用于标识BIER域中的各个边缘BFR，即BFIR或BFER节点。&#x3D;&#x3D;中间节点不需要配置BFR-ID！！！【这个地方之前一直理解错了】</p>
+<p>&#x3D;&#x3D;推荐采用‘密集’的方式配置BIER域中的BFR-ID的值。如果一个网络中BFER节点数量少于256，则推荐BFR-ID的配置范围是1~256。&#x3D;&#x3D;</p>
+</li>
+<li><p>BitString（二进制比特串）：表示BIER报文的&#x3D;&#x3D;目的节点集合&#x3D;&#x3D;，封装BIER报文头，形成BIER报文，并在BIER域内进行转发，直至报文到达BFER节点后，由BFER节点封装BIER报文头。</p>
+<p><strong>注：我认为这里面BitString的长度是BIER域边缘节点的长度，和上面的BFR-ID的值相对应的，如果值置为1，则表示报文要往该BFR-ID所代表的BFER节点发送，如果为0，则表示不发送，BitString所描述的BFER节点数量受限域BitString的长度。</strong></p>
+</li>
+<li><p>Set Identifier： SI集合标识符，一组BFER节点的标识符。BIER封装中不仅包含一个BitString，还包含一个SI（？？）SI的作用在于将BIER节点编号划分为多个不同的区间，从而支持更大规模的网络编址。</p>
+</li>
 </ul>
-<h3 id="网络切片的定义"><a href="#网络切片的定义" class="headerlink" title="网络切片的定义"></a><strong>网络切片的定义</strong></h3><p>一个5G网络切片是一组网络功能、运行这些网络功能的资源以及这些功能特定的配置所组成的集合，这些网络功能及其相应的配置形成一个完整的逻辑网络。</p>
-<h3 id="网络切片的价值之一：极高的可靠性保障"><a href="#网络切片的价值之一：极高的可靠性保障" class="headerlink" title="网络切片的价值之一：极高的可靠性保障"></a><strong>网络切片的价值之一：极高的可靠性保障</strong></h3><p>基于 SRv6 的网络切片提供针对 IP 网络中任意故障点的本地保护技术，如 TI-LFA（Topology-Independent Loop-free Alternate，与拓扑无关的无环路备份路径）、中间节点保护等。</p>
-<p>各网络切片内的链路故障倒换能够控制在切片内进行，不影响其他业务切片。</p>
-<h3 id="网络切片的价值之二：灵活定制拓扑连接"><a href="#网络切片的价值之二：灵活定制拓扑连接" class="headerlink" title="网络切片的价值之二：灵活定制拓扑连接"></a><strong>网络切片的价值之二：灵活定制拓扑连接</strong></h3><p>网络切片通过 &#x3D;&#x3D;Flex-Algo&#x3D;&#x3D; 实现按需定制逻辑网络拓扑连接，满足不同行业、业务或用户差异化的网络连接需求。</p>
-<p><a target="_blank" rel="noopener" href="https://www.h3c.com/cn/Service/Document_Software/Document_Center/Home/Routers/00-Public/Learn_Technologies/White_Paper/Flex-Algo_WP-392/?CHID=626900"> Flex-Algo学习资料</a></p>
-<p>网络切片用户定制逻辑网络拓扑连接后，无需感知基础网络的全量网络拓扑，只需要看到该网络切片的逻辑拓扑与连接，而且网络切片内的业务也被限定在该网络切片对应的拓扑内部署。</p>
-<h3 id="网络切片的价值之三：自动化切片管理"><a href="#网络切片的价值之三：自动化切片管理" class="headerlink" title="网络切片的价值之三：自动化切片管理"></a><strong>网络切片的价值之三：自动化切片管理</strong></h3><p>精细化切片规划&#x2F;切片自动化&#x2F;SLA可视化</p>
-<h1 id="网络切片架构"><a href="#网络切片架构" class="headerlink" title="网络切片架构"></a><strong>网络切片架构</strong></h1><p><img src="/%E5%88%87%E7%89%87/1.png" alt="image-20230322155533089"></p>
-<h3 id="网络切片管理层"><a href="#网络切片管理层" class="headerlink" title="网络切片管理层"></a>网络切片管理层</h3><p>规划&#x2F;部署&#x2F;运维&#x2F;优化</p>
-<h3 id="网络切片实例层"><a href="#网络切片实例层" class="headerlink" title="网络切片实例层"></a>网络切片实例层</h3><p>数据平面：主要功能是在数据业务报文中携带网路切片得标识信息，指导不同网络切片得报文按照该网络切片的转发表项进行报文的转发处理。</p>
-<p>目前数据平面可通过SRv6 SID或者Slice SID携带网络切片的标识信息。</p>
-<p>控制平面：主要功能是分发和收集各个网络切片的拓扑、资源等属性及状态信息，并基于网络切片的拓扑和资源约束进行路由和路径的计算和发放，实现将不 同网络切片的业务流按需映射到对应的网络切片实例。</p>
-<h3 id="网络基础设施层"><a href="#网络基础设施层" class="headerlink" title="网络基础设施层"></a>网络基础设施层</h3><h1 id="网络切片方案"><a href="#网络切片方案" class="headerlink" title="网络切片方案"></a><strong>网络切片方案</strong></h1><p><strong>基于亲和属性的网络切片方案</strong></p>
+<h3 id="BIER的分层架构"><a href="#BIER的分层架构" class="headerlink" title="BIER的分层架构"></a><strong>BIER的分层架构</strong></h3><ul>
+<li><p>路由层</p>
+<p>路由层负责确定BFER节点的下一跳BFR节点。</p>
+<p>通常用IGP，IS-IS协议或者OSPF协议。</p>
+</li>
+<li><p>BIER层</p>
+<p>BIER层负责组播数据报文在BIER域的传输。</p>
+<p>&#x3D;&#x3D;BFIR节点对组播数据报文封装BIER报文头，BFR节点转发BIER报文并<strong>更改BIER报文头</strong>，BFER解封装BIER报文并分发给组播业务层处理模块。&#x3D;&#x3D;</p>
+<p>BIER层包括控制平面和数据平面两部分。</p>
+<ul>
+<li><p>BIER层控制平面负责BIER信息的发布，（和路由层有衔接）BIER信息的发布依赖路由层，是路由层的协议扩展。BIER所需的IGP扩展属于BIER层，而IGP的基础功能和机制则属于路由层。</p>
+</li>
+<li><p>BIER层数据平面负责BIER数据报文的处理。（组播业务层有衔接）在BFIR节点上，组播数据报文要发送给哪些BFER节点，是通过组播业务层控制平面确定的，而在数据层面上，对组播数据报文封装BIER报文头的过程属于BIER层功能。BIER层负责将报文分发给组播业务层处理，组播业务层则确定报文属于哪个VPN或公网，解封装并根据内层组播报文进行转发。</p>
+</li>
+</ul>
+</li>
+<li><p>组播业务层</p>
+</li>
+</ul>
+<h3 id="BIER转发原理"><a href="#BIER转发原理" class="headerlink" title="BIER转发原理"></a>BIER转发原理</h3><img src="/bier/image-20230324162729119.png" alt="image-20230324162729119" width="650px" height="270px">
+
+<ol>
+<li><p>BFR-ID的配置</p>
+<p>A&#x2F;D&#x2F;E&#x2F;F作为边缘节点需要配置有效的BFR-ID值</p>
+</li>
+<li><p>BIER转发表</p>
+<p>节点A~F基于控制平面发布的信息建立<strong>BIER转发表</strong>。BIER转发表主要包括&#x3D;&#x3D;BFR邻居&#x3D;&#x3D;和&#x3D;&#x3D;FBM（Forwarding Bit Mask，转发位掩码）&#x3D;&#x3D;，表示通过该BFR邻居能到达的各BFER节点。</p>
+<p>以节点A为例，它有如下两个表项。</p>
+</li>
+</ol>
+<ul>
+<li>邻居为B的表项，FBM为0111，表示通过邻居B能到达BFR-ID &#x3D;1&#x2F;2&#x2F;3各节点，或BFR-ID &#x3D; 1&#x2F;2&#x2F;3的BFER节点的下一跳转发邻居均为节点B。 </li>
+<li>邻居为A的表项，FBM为1000，其中邻居A带有*号，表示该邻居 是自己。 </li>
+<li>以节点B为例，它有如下3个表项。 <ul>
+<li>邻居为C的表项，FBM为0011。 </li>
+<li>邻居为E的表项，FBM为0100。 </li>
+<li>邻居为A的表项，FBM为1000。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ol start="3">
+<li><p>BIER转发表的建立过程</p>
+</li>
+<li><p>查转发表</p>
+</li>
+</ol>
+<p>注： BIFT（Bit Index Forwarding Table，位索引转发表）：BIER子域内的组播流量通过查询BIFT来实现逐跳转发。每张BIFT都由三元组（BSL，SD，SI）确定。BIFT是BFR将BIRT表项中经过相同邻居不同表项进行合并生成，每条表项记录了一个下一跳邻居和对应的F-BM。</p>
 
       
     </div>
@@ -400,8 +447,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2023/04/16/Orca/" rel="next" title="论文《Orca Server-assisted Multicast for Datacenter Networks》">
-                <i class="fa fa-chevron-left"></i> 论文《Orca Server-assisted Multicast for Datacenter Networks》
+              <a href="/2023/04/17/%E5%88%87%E7%89%87/" rel="next" title="切片">
+                <i class="fa fa-chevron-left"></i> 切片
               </a>
             
           </div>
@@ -409,10 +456,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2023/04/17/bier/" rel="prev" title="Bit Index Explicit Replication (BIER)">
-                Bit Index Explicit Replication (BIER) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -555,7 +598,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">网络切片基础概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">1.0.1.</span> <span class="nav-text">网络切片的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E7%9A%84%E4%BB%B7%E5%80%BC%E4%B9%8B%E4%B8%80%EF%BC%9A%E6%9E%81%E9%AB%98%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E4%BF%9D%E9%9A%9C"><span class="nav-number">1.0.2.</span> <span class="nav-text">网络切片的价值之一：极高的可靠性保障</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E7%9A%84%E4%BB%B7%E5%80%BC%E4%B9%8B%E4%BA%8C%EF%BC%9A%E7%81%B5%E6%B4%BB%E5%AE%9A%E5%88%B6%E6%8B%93%E6%89%91%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.0.3.</span> <span class="nav-text">网络切片的价值之二：灵活定制拓扑连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E7%9A%84%E4%BB%B7%E5%80%BC%E4%B9%8B%E4%B8%89%EF%BC%9A%E8%87%AA%E5%8A%A8%E5%8C%96%E5%88%87%E7%89%87%E7%AE%A1%E7%90%86"><span class="nav-number">1.0.4.</span> <span class="nav-text">网络切片的价值之三：自动化切片管理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E6%9E%B6%E6%9E%84"><span class="nav-number">2.</span> <span class="nav-text">网络切片架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E7%AE%A1%E7%90%86%E5%B1%82"><span class="nav-number">2.0.1.</span> <span class="nav-text">网络切片管理层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E5%AE%9E%E4%BE%8B%E5%B1%82"><span class="nav-number">2.0.2.</span> <span class="nav-text">网络切片实例层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%B1%82"><span class="nav-number">2.0.3.</span> <span class="nav-text">网络基础设施层</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%88%87%E7%89%87%E6%96%B9%E6%A1%88"><span class="nav-number">3.</span> <span class="nav-text">网络切片方案</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Bit-Index-Explicit-Replication-BIER"><span class="nav-number">1.</span> <span class="nav-text">Bit Index Explicit Replication (BIER)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.0.1.</span> <span class="nav-text">一些基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BIER%E7%9A%84%E5%88%86%E5%B1%82%E6%9E%B6%E6%9E%84"><span class="nav-number">1.0.2.</span> <span class="nav-text">BIER的分层架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BIER%E8%BD%AC%E5%8F%91%E5%8E%9F%E7%90%86"><span class="nav-number">1.0.3.</span> <span class="nav-text">BIER转发原理</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
