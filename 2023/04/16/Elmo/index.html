@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -86,13 +93,13 @@
 <meta property="og:site_name" content="Yuxin&#39;s Blog">
 <meta property="og:description" content="论文《Elmo: Source Routed Multicast for Public Clouds》1.组播源路由的应用场景：多租户数据中心 2.数据中心网络特点： &#x3D;&#x3D;hypervisor switches&#x3D;&#x3D;（虚拟机监视器）[37,104]  symmetric topology（对称性的拓扑）  short path[22,60,92]   3.">
 <meta property="og:locale">
-<meta property="og:image" content="https://jyuxin28.github.io/AppData/Roaming/Typora/typora-user-images/image-20230330205058926.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171739645.png">
 <meta property="article:published_time" content="2023-04-16T12:26:20.000Z">
-<meta property="article:modified_time" content="2023-04-16T13:15:13.746Z">
+<meta property="article:modified_time" content="2023-04-17T09:44:54.270Z">
 <meta property="article:author" content="JiangYuxin">
 <meta property="article:tag" content="happiness, patience, confidence">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jyuxin28.github.io/AppData/Roaming/Typora/typora-user-images/image-20230330205058926.png">
+<meta name="twitter:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171739645.png">
 
 
 
@@ -102,7 +109,7 @@
     root: '',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -308,7 +315,18 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/%E8%AE%BA%E6%96%87/" itemprop="url" rel="index">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
+                    <span itemprop="name">网络</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/%E8%AE%BA%E6%96%87/" itemprop="url" rel="index">
                     <span itemprop="name">论文</span>
                   </a>
                 </span>
@@ -319,7 +337,7 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/%E8%AE%BA%E6%96%87/multicast/" itemprop="url" rel="index">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/%E8%AE%BA%E6%96%87/multicast/" itemprop="url" rel="index">
                     <span itemprop="name">multicast</span>
                   </a>
                 </span>
@@ -398,7 +416,8 @@
 </ul>
 </li>
 </ul>
-<h4 id="7-整体架构"><a href="#7-整体架构" class="headerlink" title="7.整体架构"></a>7.整体架构</h4><p><img src="/../../../AppData/Roaming/Typora/typora-user-images/image-20230330205058926.png" alt="image-20230330205058926"></p>
+<h4 id="7-整体架构"><a href="#7-整体架构" class="headerlink" title="7.整体架构"></a>7.整体架构</h4><img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171739645.png" alt="image-20230417173915604" style="zoom:80%;">
+
 <p>A logically-centralized controller manages multicast groups for tenants by &#x3D;&#x3D;installing flow rules in hypervisor switches&#x3D;&#x3D; (to encapsulate packets with a compact encoding of the forwarding policy) and the network switches (to handle forwarding decisions for groups too large to encode entirely in the packet header).</p>
 <ul>
 <li>Logically-centralized controller<ul>
@@ -547,7 +566,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -607,6 +626,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -618,7 +644,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -641,6 +669,27 @@
 
 
 
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("04/17/2023 00:00:00");//在此处修改你的建站时间
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "已运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+</div>
+
+
         
 
 
@@ -653,11 +702,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -682,6 +726,8 @@
 
   
 
+
+  
 
 
 
@@ -721,6 +767,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 

@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -98,7 +105,7 @@
     root: '',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -358,9 +365,10 @@
         
           
           Bit Index Explicit Replication (BIER)
+
 数据包通过比特转发入口路由器 (BFIR) 进入 BIER 域。他们构建一个 BIER 报头并将其推送到包含 BIER 转发过程信息的数据包上。在比特转发出口路由器 (BFER)，BIER 报头被移除。
 一些基本概念
-BIE
+BI
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -657,7 +665,18 @@ uRLLC：超可可靠和低时延通信
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/%E8%AE%BA%E6%96%87/" itemprop="url" rel="index">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
+                    <span itemprop="name">网络</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/%E8%AE%BA%E6%96%87/" itemprop="url" rel="index">
                     <span itemprop="name">论文</span>
                   </a>
                 </span>
@@ -668,7 +687,7 @@ uRLLC：超可可靠和低时延通信
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/%E8%AE%BA%E6%96%87/multicast/" itemprop="url" rel="index">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/%E8%AE%BA%E6%96%87/multicast/" itemprop="url" rel="index">
                     <span itemprop="name">multicast</span>
                   </a>
                 </span>
@@ -829,7 +848,18 @@ Orca divides the state and tasks of the data plane among switch
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/%E8%AE%BA%E6%96%87/" itemprop="url" rel="index">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index">
+                    <span itemprop="name">网络</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/%E8%AE%BA%E6%96%87/" itemprop="url" rel="index">
                     <span itemprop="name">论文</span>
                   </a>
                 </span>
@@ -840,7 +870,7 @@ Orca divides the state and tasks of the data plane among switch
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/learning/%E8%AE%BA%E6%96%87/multicast/" itemprop="url" rel="index">
+                  <a href="/categories/learning/%E7%BD%91%E7%BB%9C/%E8%AE%BA%E6%96%87/multicast/" itemprop="url" rel="index">
                     <span itemprop="name">multicast</span>
                   </a>
                 </span>
@@ -1327,7 +1357,7 @@ This paper is included in the Procee
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1371,6 +1401,13 @@ This paper is included in the Procee
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -1382,7 +1419,9 @@ This paper is included in the Procee
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1405,6 +1444,27 @@ This paper is included in the Procee
 
 
 
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("04/17/2023 00:00:00");//在此处修改你的建站时间
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "已运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+</div>
+
+
         
 
 
@@ -1417,11 +1477,6 @@ This paper is included in the Procee
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -1446,6 +1501,8 @@ This paper is included in the Procee
 
   
 
+
+  
 
 
 
@@ -1485,6 +1542,11 @@ This paper is included in the Procee
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 

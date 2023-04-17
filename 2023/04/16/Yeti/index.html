@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -86,24 +93,24 @@
 <meta property="og:site_name" content="Yuxin&#39;s Blog">
 <meta property="og:description" content="论文：《Yeti: Stateless and Generalized Multicast Forwarding》Khaled Diab and Mohamed Hefeeda, Simon Fraser University This paper is included in the Proceedings of the 19th USENIX Symposium on Networked Sy">
 <meta property="og:locale">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image013.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image015.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image017.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image019.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image021.png">
-<meta property="og:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image023.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171730391.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171731446.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171731773.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171731646.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171731927.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171732318.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171732568.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171732959.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171733533.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171733255.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171733171.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171733526.png">
 <meta property="article:published_time" content="2023-04-16T12:26:20.000Z">
-<meta property="article:modified_time" content="2023-04-17T07:47:55.667Z">
+<meta property="article:modified_time" content="2023-04-17T09:37:40.291Z">
 <meta property="article:author" content="JiangYuxin">
 <meta property="article:tag" content="happiness, patience, confidence">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png">
+<meta name="twitter:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171730391.png">
 
 
 
@@ -113,7 +120,7 @@
     root: '',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -411,8 +418,9 @@
 <li>使用可编程路由器（NetFPGA）在硬件测试台上实现Yeti，以证明其实用性。我们的结果表明，Yeti可以支持承载数千个多播会话的高速链路。</li>
 <li>将Yeti与最接近基于标签的多播路由方法BIER-TE[3]进行了比较，并使用不同大小的真实ISP拓扑进行了仿真。仿真结果表明，与BIER-TE相比，Yeti平均减少了65.3%的标签开销。</li>
 </ul>
-<h5 id="（四）Yeti系统的总体概述"><a href="#（四）Yeti系统的总体概述" class="headerlink" title="（四）Yeti系统的总体概述"></a><strong>（四）<strong><strong>Yeti</strong></strong>系统的总体概述</strong></h5><p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png" alt="img"></p>
-<p>​                                                                                                 图1.Yeti的总体架构</p>
+<h5 id="（四）Yeti系统的总体概述"><a href="#（四）Yeti系统的总体概述" class="headerlink" title="（四）Yeti系统的总体概述"></a><strong>（四）<strong><strong>Yeti</strong></strong>系统的总体概述</strong></h5> <img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171730391.png" alt="image-20230417173045346" style="zoom: 67%;">  
+
+<p>​                                图1.Yeti的总体架构</p>
 <p><strong>如上图所示，总体架构，ISP网络包含数据平面和控制平面</strong></p>
 <ul>
 <li><p>数据平面：每个路由器包含两种数据结构</p>
@@ -431,11 +439,14 @@
 </ul>
 <p><strong>4.1  Yeti中的标签类型</strong></p>
 <p>  Yeti是一个基于标签的系统，因此最重要的问题之一是定义标签的类型和结构，以最小化通信和处理开销，同时依然能够表示通用多播图。本文提出了如下表1所示的四种标签类型，前两种标签类型为Forward Shortest Path (FSP)和Forward Traffic Engineered (FTE)，路由器使用它们在没有分支的路径上转发数据包。其他两种标签类型是多播（MCT）和复制（CPY），MCT标签指示路由器在多个接口上复制数据包，CPY标签为复制标签的子集。每个标签由两个字段组成：类型和内容。类型字段被路由器用于在解析期间区分标签，而内容字段包含该标签所携带的信息，标签的大小取决于内容字段的大小。</p>
-<p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png" alt="img"></p>
-<p>​                                                              表1.Yeti中的标签类型，N为路由器数量，I为每个路由器的最大接口数</p>
+<p><img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171731446.png" alt="image-20230417173102418"></p>
+<p>​                                                           表1.Yeti中的标签类型，N为路由器数量，I为每个路由器的最大接口数</p>
 <p>  如下图2所示，实线表示树链接，虚线表示到某些目的地的最短路径上的链接。</p>
-<p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png" alt="img"></p>
-<p>图2. Yeti中路径段（path segments）和分支点（branching points）的示意图</p>
+<img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171731773.png" alt="image-20230417173117743" style="zoom:67%;">
+
+
+
+<p>​                                              图2. Yeti中路径段（path segments）和分支点（branching points）的示意图</p>
 <p>其中路径段path segments是指没有分支的连续路由段，分支点branching points是指在多个接口上复制数据包的路由器。</p>
 <ul>
 <li>对于无分支路径</li>
@@ -446,7 +457,7 @@
 </ul>
 <p>定义Multicast (MCT) 用于指示路由器用大小为I位的bitmap在多个接口上复制数据包，其中I是每个路由器的最大接口计数。bitmap表示本地接口ID，其中应转发数据包的接口位设置为1。</p>
 <p>定义Copy (CPY) 用于标签分割，即MCT标签后面跟着n组标签来引导这些分支中的流量，其中每个标签集都以一个CPY标签开始。一个分支的CPY标签包含要复制到该分支的标签大小的偏移量(以位为单位)。</p>
-<p>​        <img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png" alt="img"></p>
+<p>​     <img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171731646.png" alt="image-20230417173131623"></p>
 <p>​               图3.MCT与CPY标签结构示意图</p>
 <p><strong>4.2在控制器上创建Yeti标签</strong></p>
 <p>在这个部分中为控制器设计标签创建算法—ENCODEGRAPH算法。如算法1所示，在控制器上运行以创建标签。</p>
@@ -458,8 +469,9 @@
 <ul>
 <li><strong>创建标签</strong>**—**CREATELABELS算法将T分为段和分支点。该算法计算每个段的FSP和FTE标签，以及分支点的MCT和CPY标签。标签顺序很重要，因为它反映了哪些路由器处理什么标签。该算法以深度优先的搜索顺序从连接到入口路由器的核心路由器开始遍历T的核心路由器。</li>
 </ul>
-<p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png" alt="img"></p>
-<p>图4. 创建标签算法示意图</p>
+<img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171731927.png" alt="image-20230417173150882" style="zoom:80%;">
+
+<p>​                                                                                   图4. 创建标签算法示意图</p>
 <p><strong>但如果r无子节点或者提供一些服务(有一个路径段)，或者r有多个子节点(有一个分支点)，则算法计算标签的方式如下</strong>。</p>
 <ul>
 <li><strong>处理路径段算法</strong>—当pth_seg结束时，CREATELABELS算法为路径段创建一个标签，有如下三种情况：</li>
@@ -475,8 +487,9 @@
 <ul>
 <li><strong>处理分支点算法</strong>—CREATELABELS算法计算分支点的MCT和CPY标签。该算法调用CREATEMCT，返回MCT标签和一个布尔值cpy，指示是否需要cpy标签。为了创建一个MCT标签，CREATEMCT初始化一个宽度为I +1的空位图(I是每个路由器的最大接口计数)。对于r的每个子节点c，它设置这个位图中的位置位，表示r和c之间的接口ID，它检查是否需要CPY标签。如果任何子节点c至少有一个核心子节点，这意味着这个核心子节点需要标签来转发&#x2F;复制数据包。否则，如果所有子结点都没有其他核心子结点，路由器r要么直接连接到一个出口路由器，要么它的子结点连接到出口路由器。因此，这些路由器不需要更多的标签，Yeti也不会为这些分支创建CPY标签。例如，在图3中的路由节点4上，其核心子结点3和7有另外的子结点，分别为6和10。因此，在节点4处为两个分支创建了两个CPY标签，算法不会在路由节点8上创建CPY标签，因为它的核心子结点11和12没有其他的核心子结点。</li>
 </ul>
-<p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png" alt="img"></p>
-<p>图5. 控制器设计标签创建算法总体示意图</p>
+<img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171732318.png" alt="image-20230417173206275" style="zoom:50%;">
+
+<p>​                                                                                 图5. 控制器设计标签创建算法总体示意图</p>
 <p><strong>4.3处理Yeti数据包</strong></p>
 <p>包处理算法将部署在核心路由器上，处理Yeti报文。这是通过在入口路由器为Yeti包设置不同的以太网类型来实现的。核心路由器检查传入数据包的以太网类型，如果它们是Yeti数据包，则调用处理算法，该算法转发&#x2F;复制数据包，并删除下一个路由器不需要的标签，并在分支点复制标签的子集。</p>
 <p>包处理算法的工作原理如下。如果数据包没有标签，这意味着数据包到达了附在出口路由器上的核心路由器。因此，数据包被转发到该出口路由器。否则，算法根据以下情况处理标签:</p>
@@ -485,7 +498,7 @@
 <p><em>(3) MCT**标签。</em>算法首先复制原始标签，然后从包中去除标签。然后将MCT内容提取到mct中。MCT标签包含接口ID位图(MCT.intfs)以及后面是否有CPY标签(MCT.has_cpy)。算法按照路由器接口id的升序迭代，它找到要在其上复制数据包的接口。对于MCT标签中包含的每个接口，算法克隆数据包。如果MCT标签后面是CPY标签，算法将相应的CPY标签删除，根据偏移值提取以下标签，在对应的接口上转发克隆的数据包。</p>
 <p><strong>（五）仿真测试</strong></p>
 <p>将上述多播转发系统进行仿真实现，并在NetFPGA可编程路由的测试平台上进行实验，同时也在P4交换机上进行仿真实现。测试平台架构如下图6所示。</p>
-<p><strong><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image013.png" alt="img"></strong></p>
+<p><img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171732568.png" alt="image-20230417173223540"></p>
 <p>图6. 测试平台架构示意图</p>
 <p>如图6所示，测试平台有一个Yeti路由器，它代表ISP拓扑中的核心路由器，接收处理并发多播会话的数据包。</p>
 <p><strong>（仿真实验一）Yeti与有状态或混合状态多播方法比较</strong></p>
@@ -494,14 +507,16 @@
 <li><strong>状态量大小</strong></li>
 </ul>
 <p>如下图7所示，随着多播接收端密度的增大，对应于维持状态所需的核心路由器的数量变化。</p>
-<p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image015.png" alt="img"></p>
+<img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171732959.png" alt="image-20230417173249931" style="zoom:80%;">
+
 <p>图7.维护状态量大小</p>
 <p>对于拓扑路由节点数分别为110和197的情况，由上图7可以明显看出，随着多播会话接收端密度增大，RB-OF（即Openflow）在每个节点所需维护的状态量明显增大，如对于路由节点为197的拓扑结构，当多播会话接收密度从10%增加到30%，路由节点状态量从80增长到130；而对于LIPSIN当多播会话接收密度为40%时，路由节点维持的状态量才达到20，而对于Yeti则根本不需要在任何核心路由器上维护任何状态量。</p>
 <ul>
 <li><strong>状态更新率</strong></li>
 </ul>
 <p>在路由器上维护状态不仅消耗其有限的SRAM，而且当多播图发生变化时，还会增加在路由器上更新此状态的开销。评估当单个多播树发生变化时需要更新的路由器的平均数量与百分比，并对于不同大小的ISP拓扑进行实验，将结果整理如下表2所示。</p>
-<p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image017.png" alt="img"></p>
+<img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171733533.png" alt="image-20230417173304504" style="zoom:80%;">
+
 <p>表2. 多播分布图中每次更改都需要更新的路由器数。最右侧列中显示的节省分别是相对于RB-OF和LIPSIN的。最下面一行中的平均值是在所有14个ISP拓扑中计算的，并通过每个拓扑中的路由器数量进行归一化，它们表示每次更改都要更新的路由器的平均百分比。</p>
 <p>综上所述，与有状态和混合方法相比，Yeti扩展性好，可以处理动态多播会话，因为它不需要在任何路由器上维护状态，并且显著减少了频繁状态更新的需要。</p>
 <p><strong>（仿真实验二）Yeti与无状态多播方法比较</strong></p>
@@ -509,21 +524,24 @@
 <ul>
 <li><strong>对于不同多播会话接收密度情况下分组标签的大小</strong></li>
 </ul>
-<p><strong><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image019.png" alt="img"></strong></p>
-<p>图8. 对于不同多播会话接收密度下标签大小的CDF曲线</p>
+<img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171733255.png" alt="image-20230417173318221" style="zoom:80%;">
+
+<p>​                                                                         图8. 对于不同多播会话接收密度下标签大小的CDF曲线</p>
 <p>如上图8所示，Yeti的标签尺寸远小于BIER-TE的标签尺寸。例如，对于节点数为110的路由拓扑（图8a）在多播会话接收密度为30%的情况下，与BIER-TE相比，Yeti将50%数据包的标签大小减少了91.6%，且Yeti中90%数据包的标签大小小于19字节，而BIER-TE的标签大小为64字节。对于节点数为197的路由拓扑（图8b）在多播会话接收密度为30%的情况下，对于50%的数据包，Yeti中的标签大小比BIER-TE小15倍。</p>
 <ul>
 <li><strong>对于平均标签大小于跳数的关系</strong></li>
 </ul>
-<p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image021.png" alt="img"></p>
-<p>图9. Yeti和BIER-TE的平均标签大小与跳数的关系</p>
+<img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171733171.png" alt="image-20230417173328141" style="zoom:80%;">
+
+<p>​                                                                           图9. Yeti和BIER-TE的平均标签大小与跳数的关系</p>
 <p>  如图9所示，BIER-TE的标签大小取决于拓扑大小，对于Routers&#x3D;110和197分别为64和110字节。而Yeti中的标签大小随着数据包远离源而快速减小，如在图9a中，经过1和5跳后，Yeti的标签大小分别减少了16.9%和67.8%。仅经过2跳后，Yeti的标签大小小于BIER-TE的标签大小，并且在经过前50%的跳数后，Yeti将标签大小减小了87.5%。</p>
 <ul>
 <li><strong>Yeti和BIER-TE的总端到端标签开销</strong></li>
 </ul>
 <p>定义端到端标签开销为标签大小乘以数据包经过的跳数，即图7中曲线下方的区域面积。如表3所示总结了多个示例拓扑的标签开销（以字节为单位）。结果表明，Yeti相比于BIER-TE标签开销节约高达70.2%。对于14个ISP拓扑中每个路由器的平均标签开销，Yeti中每个路由器只需要4个字节就可以转发多播会话的数据包（平均而言），而BIER-TE每个路由器需要11.4个字节，即Yeti平均节省了65.3%的标签开销。</p>
-<p><img src="file:///C:/Users/Amy/AppData/Local/Temp/msohtmlclip1/01/clip_image023.png" alt="img"></p>
-<p>​                                                                                   表3.Yeti和BIER-TE的标签开销（字节）</p>
+<img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202304171733526.png" alt="image-20230417173337499" style="zoom: 67%;">
+
+<p>​                                                                                            表3.Yeti和BIER-TE的标签开销（字节）</p>
 <p>综上所述，Yeti中的标签大小随数据包向多播目的地移动而迅速减小，因为路由器只复制每个分支的标签子集。与最接近的基于标签的多播转发系统BIER-TE相比，这导致标签开销的显著节省。此外，BIER-TE不能满足多播流量的服务链要求，而Yeti可以。</p>
 <p>综上所述，由于路由节点只复制数据包每个分支的标签子集，因此随着数据包向多播终点移动，Yeti中标签大小迅速减小。且相比于BIER-TE，Yeti节约标签开销，且可满足多播流量的服务链需求。</p>
 <p><strong>（六）对上述多播系统方案总结</strong></p>
@@ -667,7 +685,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -727,6 +745,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -738,7 +763,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -761,6 +788,27 @@
 
 
 
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("04/17/2023 00:00:00");//在此处修改你的建站时间
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "已运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+</div>
+
+
         
 
 
@@ -773,11 +821,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -802,6 +845,8 @@
 
   
 
+
+  
 
 
 
@@ -841,6 +886,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
