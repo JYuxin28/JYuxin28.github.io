@@ -86,18 +86,21 @@
 
 
 
-<meta name="description" content="This is MyBlog Created and Used By JiangYuxin to Record Life and Study.">
+<meta name="description" content="本来说这个不难但由于薄弱的网络知识，配了很久没配好。 首先在这里要知道虚拟机的三种联网模式（桥接模式、Nat模式、仅主机模式） 1.桥接模式：在桥接模式下，VMWare虚拟出来的操作系统就像是局域网中一台独立的主机，它能够访问网内任何一台机器。在桥接模式下，必须手动为虚拟系统配置IP地址、子网掩码，并且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信。配置好网关和DNS的地址后，才能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="photograph">
-<meta property="og:url" content="https://jyuxin28.github.io/2023/07/04/photograph/index.html">
+<meta property="og:title" content="虚拟机配网">
+<meta property="og:url" content="https://jyuxin28.github.io/2023/07/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%91/index.html">
 <meta property="og:site_name" content="Yuxin&#39;s Blog">
-<meta property="og:description" content="This is MyBlog Created and Used By JiangYuxin to Record Life and Study.">
+<meta property="og:description" content="本来说这个不难但由于薄弱的网络知识，配了很久没配好。 首先在这里要知道虚拟机的三种联网模式（桥接模式、Nat模式、仅主机模式） 1.桥接模式：在桥接模式下，VMWare虚拟出来的操作系统就像是局域网中一台独立的主机，它能够访问网内任何一台机器。在桥接模式下，必须手动为虚拟系统配置IP地址、子网掩码，并且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信。配置好网关和DNS的地址后，才能">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-07-04T09:41:56.000Z">
-<meta property="article:modified_time" content="2023-07-04T09:41:56.944Z">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202307061714056.png">
+<meta property="og:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202307061715298.png">
+<meta property="article:published_time" content="2023-07-06T03:13:33.000Z">
+<meta property="article:modified_time" content="2023-07-06T09:15:40.293Z">
 <meta property="article:author" content="JiangYuxin">
 <meta property="article:tag" content="happiness, patience, confidence">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202307061714056.png">
 
 
 
@@ -127,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://JYuxin28.github.io/2023/07/04/photograph/"/>
+  <link rel="canonical" href="https://JYuxin28.github.io/2023/07/06/虚拟机配网/"/>
 
 
 
 
 
-  <title>photograph | Yuxin's Blog</title>
+  <title>虚拟机配网 | Yuxin's Blog</title>
   
 
 
@@ -250,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://JYuxin28.github.io/2023/07/04/photograph/">
+    <link itemprop="mainEntityOfPage" href="https://JYuxin28.github.io/2023/07/06/%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -267,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">photograph</h1>
+          <h1 class="post-title" itemprop="name headline">虚拟机配网</h1>
         
 
         <div class="post-meta">
@@ -279,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-04T17:41:56+08:00">
-                2023-07-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-06T11:13:33+08:00">
+                2023-07-06
               </time>
             
 
@@ -289,6 +292,39 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E6%8A%80%E6%9C%AF%E9%97%AE%E9%A2%98/" itemprop="url" rel="index">
+                    <span itemprop="name">杂七杂八的技术问题</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E6%8A%80%E6%9C%AF%E9%97%AE%E9%A2%98/%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%91/" itemprop="url" rel="index">
+                    <span itemprop="name">虚拟机配网</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -317,7 +353,23 @@
       
 
       
-        
+        <p>本来说这个不难但由于薄弱的网络知识，配了很久没配好。</p>
+<p>首先在这里要知道虚拟机的三种联网模式（桥接模式、Nat模式、仅主机模式）</p>
+<p>1.桥接模式：在桥接模式下，VMWare虚拟出来的操作系统就像是局域网中一台独立的主机，它能够访问网内任何一台机器。在桥接模式下，必须手动为虚拟系统配置IP地址、子网掩码，并且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信。配置好网关和DNS的地址后，才能实现通过局域网的网关或路由器访问互联网。</p>
+<p><strong>桥接模式：虚机和物理主机可通信，可与外网通信。</strong></p>
+<p>2.Nat模式：net模式就是将你的物理主机作为一个路由器给你的虚拟机分配一个IP。这种模式就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。</p>
+<p>也就是说，使用NAT模式能够实现在虚拟的系统里面直接访问互联网。NAT模式下的虚拟系统的TCP&#x2F;IP配置信息是由VMnet8(NAT)虚拟网络的DHCPserver提供的，无法进行手工改动，<strong>因此虚拟系统也就无法和本局域网中的其它真实主机进行通讯</strong>。采用NAT模式最大的优势是虚拟系统接入互联网很easy。仅仅需要宿主机器能访问互联网，不需配置IP地址，子网掩码，网关。可是DNS地址还是要依据实际情况配的。<br><strong>NAT模式：虚机可和外网通信</strong></p>
+<p>3.主机模式：主机模式相当于将虚拟机与外网隔开，使得虚拟机成为一个独立的系统，只与主机相互通讯。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">桥接模式：</span><br><span class="line">VMware虚拟的系统就想局域网中独立的主机一样（有独立的IP）</span><br><span class="line">它可以访问网内任何一台机器</span><br><span class="line"></span><br><span class="line">Nat模式：可以通过宿主机访问互联网（宿主机联网，虚拟机就能联网）</span><br><span class="line">它不能和本局域网中的其他主机进行通信</span><br></pre></td></tr></table></figure>
+
+<p>Linux支持主机侧接收BIERv6报文，需要实现在虚拟主机之间的通信，因此两台虚拟机都要实现网桥模式。</p>
+<p>网桥联网模式配置参考：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_49846847/article/details/129016250">https://blog.csdn.net/qq_49846847/article/details/129016250</a></p>
+<p>再换新的虚拟机只需要注意配这个部分就可</p>
+<p><img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202307061714056.png" alt="20529da831e4fce88df5d07c4e61e90"></p>
+<p>NAT联网模式配置参考：</p>
+<p><img src="https://amy-for-blog.oss-cn-beijing.aliyuncs.com/blog/202307061715298.png" alt="c157e71bbe5bd17ec039f2f7d206fcd"></p>
+
       
     </div>
     
@@ -432,7 +484,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
